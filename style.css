@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;900&display=swap');
 
 
 html{
@@ -10,7 +10,8 @@ html{
   margin:0;
   padding:0;
   box-sizing: border-box;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: 'Prompt';
+  /*font-family:Arial, Helvetica, sans-serif;*/
   user-select: none;
 }
 body {
@@ -205,8 +206,8 @@ body {
 }
 
 .card ul li {
+  letter-spacing : 0.6px;
   z-index: 4;
-  letter-spacing:0.6px;
   font-size: 14px;
   width:250px;
   height:20px;
@@ -268,6 +269,11 @@ i {
   transform: translate(60px,-95px);
 }
 
+.card-1 span {
+  color:white;
+  font-weight: 600;
+}
+
 .card-2 {
   pointer-events: auto;
   transition: 2s;
@@ -279,12 +285,12 @@ i {
 
 .card-2:hover li, .card-2:hover a{
   color:#fff;
-  letter-spacing: 0.8px;
+  letter-spacing:;
 }
 
 .card-2 ul li:hover, .card-2 ul li:hover a{
   color:#000;
-  letter-spacing: 1.4px;
+  letter-spacing: ;
 } 
 .card-2 a:hover{
   color: #000;
