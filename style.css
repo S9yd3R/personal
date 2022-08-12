@@ -2,7 +2,8 @@
 
 
 html{
-  scroll-behavior: scroll-behavior;
+  scroll-behavior: smooth;
+  scroll-margin: 100px;
 }
 
 * {
@@ -15,40 +16,119 @@ html{
 body {
   background-image: linear-gradient(45deg, #161616,#5E5E5E);
   background-attachment: fixed;
-  width:100vw;
-  height:120vh;
 }
 
 
 
+.last-container {
+  min-height: 300px; 
+  background-color: #262626;
+  margin-bottom:0;
+  padding-bottom:0;
 
-
-footer {
-  position: relative;
-  height:50vh;
-  width:100%;
-  overflow: hidden;
-  background-color: white;
-}
-
-footer .wave{
-  position: absolute;
-  top: 0;
-  left:0;
-  width:100vw;
-  min-height:60px;
-  background-color:red;
-  background-image: url("./wave.png");
-  
 }
 
 
+.last-container ul {
+  align-items: center;
+}
+
+.last-container ul li {
+  list-style: none;
+  text-decoration: none;
+  color:white;
+  letter-spacing: 2px;
+  text-align:center;
+  padding-top:30px;
+}
+
+.footer-item a{
+  color:#808080;
+  font-size:12px;
+  text-decoration: none;
+}
 
 
 
+.waves {
+  margin-top: 100px;
+    position: relative;
+    width: 100vw;
+    height: 150px;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 100px;
+}
 
+.parallax > use {
+    -webkit-animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+            animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
 
+.parallax > use:nth-child(1) {
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+}
 
+.parallax > use:nth-child(2) {
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+    -webkit-animation-delay: -4s;
+            animation-delay: -4s;
+    -webkit-animation-duration: 13s;
+            animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+    -webkit-animation-delay: -5s;
+            animation-delay: -5s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+}
+
+@-webkit-keyframes moveForever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+                transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+                transform: translate3d(85px, 0, 0);
+    }
+}
+
+@keyframes moveForever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+                transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+                transform: translate3d(85px, 0, 0);
+    }
+}
+/*
+@media (max-width : 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    .content {
+        height: 30;
+    }
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+  }
+
+*/
 
 
 
@@ -57,10 +137,9 @@ footer .wave{
 .main {
   
   margin:auto;
-  width:100vw;
-  min-height:200vh;
+  width:360px;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   align-items: center;
   position: relative;
 }
@@ -69,7 +148,7 @@ footer .wave{
   font-size:24px;
   background-color:purple;
   color:white;
-  transition: 3s;
+  transition: 1.5s;
 }
 
 .main .head-nav li i:hover {
@@ -77,6 +156,8 @@ footer .wave{
 }
 
 .card {
+  scroll-margin: 100px;
+  margin: auto;
   margin-top:50px;
   padding:5px;
   position: relative;
@@ -103,7 +184,7 @@ footer .wave{
   font-size: 20px;
   letter-spacing: 2px;
   color: white;
-  transition:3s;
+  transition:1.5s;
 }
 
 .card .card-para {
@@ -133,7 +214,7 @@ footer .wave{
   margin-top:15px;
   justify-content: center;
   list-style: none;
-  transition: 2s;
+  transition: 1.5s;
   color: #adadad;
 }
 
@@ -155,7 +236,7 @@ i {
 
 .card ul li a {
   text-decoration: none;
-  transition: 3s;
+  transition: 1.5s;
   color: #adadad;
 }
 
@@ -165,8 +246,9 @@ i {
 }
 
 .card-1 {
+  scroll-margin: 200px;
   margin-top: 150px;
-  transition: 2.5s;
+  transition: 2s;
 }
 .card-1:hover {
   color:#adadad;
@@ -188,7 +270,8 @@ i {
 
 .card-2 {
   pointer-events: auto;
-  transition: 3.5s;
+  transition: 2s;
+  line-height: 20px;
 }
 
 
@@ -213,3 +296,20 @@ i {
   box-shadow: -7px 7px 30px #fff;
 }
 
+
+.card {
+ margin-right:auto;
+ margin-left: auto;
+ }
+
+
+
+
+
+
+
+
+footer .content {
+  background-color:rgb(38,38,38);
+  color: #fff;
+}

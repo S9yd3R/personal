@@ -14,15 +14,15 @@
 </head>
 <body>
   <div class="main" id="main">
-    <div class="card card-1" onclick="">
-      <div class="image"><img src="./bg.jpg" alt="" srcset=""></div>
-      <p class="card-para">Hello freakz.. I'm<span> Nandhu </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id commodi numquam perspiciatis, accusantium ex ipsa!</p>
+    <div class="card card-1" id="intro" onclick="">
+      <div class="image"><img src="./bga1.png" alt="" srcset=""></div>
+      <p class="card-para">Hello folkz.. I'm<span> Nandhu </span> I'm a developer who's trying to create anything and everything that i feel intresting ...</p>
     </div>
-    <div class="card card-2" onclick="theme(2)">
+    <div class="card card-2" id="aboutme"onclick="">
       <h1 class="card-head">Aboutme</h1>
-      <p class="card-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, inventore dicta sint iste molestiae vitae est quae aperiam incidunt consequatur nostrum facilis, voluptates minus voluptate! Ipsum dicta impedit error dolorum!</p>
+      <p class="card-para">I'm 18 year old teenage boy whos based on India Kerala & i'm  instrested in programming and cyber security stuffs .. & i'm planning to be a fullstack devloper by the age of 20 without a degree ...</p>
     </div>
-    <div class="card card-2" >
+    <div class="card card-2" id="skills">
       <h1 class="card-head">Skills</h1>
       <ul class="card-list" onclick="">
         <li class="card-list-item"onclick=""><i class="fa-light fa-globe"></i>Web Development</li>
@@ -31,7 +31,7 @@
       </ul>
     </div>
 
-    <div class="card card-2" onclick="theme()">
+    <div class="card card-2" id="hobbies" onclick="theme()">
       <h1 class="card-head">Hobbies</h1>
       <ul>
         <li><i class="fa-solid fa-code"></i>Coding</li>
@@ -41,21 +41,45 @@
       </ul>
     </div>
 
-    <div class="card card-2" id="c-5"onclick="custom()">
+    <div class="card card-2" id="Social"onclick="custom()">
       <h1 class="card-head">Social Platforms</h1>
       <ul>
-        <li><i class="fa-brands fa-instagram"></i><a href="#" onclick="">Instagram</a></li>
-        <li><i class="fa-brands fa-github"></i><a href="#" onclick="">Github</a></li>
-        <li><i class="fa-brands fa-telegram"></i><a href="#" onclick="">Telegram</a></li>
+        <li><i class="fa-brands fa-instagram"></i><a href="https://instagram.com/s9y_d3r?igshid=YmMyMTA2M2Y=" onclick="">Instagram</a></li>
+        <li><i class="fa-brands fa-github"></i><a href="https://github.com/S9yd3R" onclick="">Github</a></li>
+        <li><i class="fa-brands fa-telegram"></i><a href="https://t.me/S9y_d3R" onclick="">Telegram</a></li>
       </ul>
     </div>
   </div>
 
+
+
+
   <footer>
-    <div class="wave wave1"></div>
-    <div class="wave wave2"></div>
-    <div class="wave wave3"></div>
-    <div class="wave wave4"></div>
+
+
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /></defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgb(89,89,89,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(64,64,64,0.8)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(51,51,51,0.9)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(38,38,38)" />
+            </g>
+        </svg>
+
+
+
+        <div class="last-container">
+          <ul>
+            <li class="footer-item"><a href="#intro">Intro</a></li>
+            <li class="footer-item"><a href="#aboutme">AboutMe</a></li>
+            <li class="footer-item"><a href="#skills">Skills</a></li>
+            <li class="footer-item"><a href="#hobbies">Hobbies</a></li>
+            <li class="footer-item"><a href="#Social">Social Platforms</a></li>
+          </ul>
+        </div>
+
+
   </footer>
 
   <script src="./script.js"></script>
