@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;900&display=swap');
 
-html{
+html {
   scroll-behavior: smooth;
-  scroll-margin: 100px;
 }
 
 * {
